@@ -1,0 +1,38 @@
+#%RAML 1.0
+title: Major-Asg-Chandan_Khare
+mediaType:
+  - application/json
+version: v1
+protocols:
+  - HTTP
+/milestone1:
+  get:
+    responses:
+      "200":
+        body:
+          type: Major-asign
+          items:
+            type: object
+  delete:
+    responses:
+      "200": {}
+types:
+  Major-asign:
+    items:
+      properties:
+        id:
+          description: ID
+          example: "2482"
+          type: string
+        name:
+          example: Kartik Kocchar
+          type: string
+        email:
+          example: kartik_kocchar@rutherford.io
+          type: string
+        gender:
+          example: female
+          type: string
+        status:
+          example: inactive
+          type: string
